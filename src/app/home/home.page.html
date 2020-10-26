@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div style="text-align: center;">
+  <div id="container" >
+    <footer>
+  <strong>Ready to create an app?</strong>
+  <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+</footer>
+</div>
+  <ion-button color="danger" shape="round" size="meduim" > Default </ion-button>
+  <br>
+  <ion-button color="secondary">
+    <ion-icon name="add"  slot="end"></ion-icon>
+    add
+  </ion-button>
+  <ion-button href="about" (click)="  NavigateToAbout()">
+    About
+  </ion-button>
+       <p> c'est le  {{Tp}} </p>
+       <img [src] = "img" />
+       <br>
+       <br>
+    <ion-button (click)= onsave($event)>
+        save
+  </ion-button>
+  <br>
+  <input type="text" [(z)]="name">
+  <br>
+</div>
+</ion-content>
